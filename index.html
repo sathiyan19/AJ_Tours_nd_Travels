@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Arul Jothi</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./css/nav_section.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./css/car_detail.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="./js/carousel.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div class="page-wrap">
+      <header class="page-header">
+        <nav>
+          <img src="./img/AJ_logo1.png" alt="no" srcset="" />
+          <!-- <h1>CPC | Travel</h1> -->
+          <ul>
+            <li id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </li>
+          </ul>
+        </nav>
+
+        <main>
+          <article id="hero-1" style="--i: 5">
+            <div class="hero-info">
+              <h2>Travel the</h2>
+              <h1>World</h1>
+              <h3>Pragser Wildsee, Italy</h3>
+            </div>
+            <div class="hero-image hi-1"></div>
+          </article>
+
+          <article id="hero-2" style="--i: 4">
+            <div class="hero-info">
+              <h2>Savour the</h2>
+              <h1>Journey</h1>
+              <h3>Marignier, France</h3>
+            </div>
+            <div class="hero-image hi-2"></div>
+          </article>
+
+          <article id="hero-3" style="--i: 3">
+            <div class="hero-info">
+              <h2>Expand Your</h2>
+              <h1>Horizons</h1>
+              <h3>Hooker Valley Track, New Zealand</h3>
+            </div>
+            <div class="hero-image hi-3"></div>
+          </article>
+
+          <article id="hero-4" style="--i: 2">
+            <div class="hero-info">
+              <h2>Explore and</h2>
+              <h1>Reflect</h1>
+              <h3>Dolmites, Italy</h3>
+            </div>
+            <div class="hero-image hi-4"></div>
+          </article>
+
+          <article id="hero-5" style="--i: 1">
+            <div class="hero-info">
+              <h2>Change Your</h2>
+              <h1>Perspective</h1>
+              <h3>Phuket, Thailand</h3>
+            </div>
+            <div class="hero-image hi-5"></div>
+          </article>
+        </main>
+      </header>
+
+      <section>
+        <ul class="level-1">
+          <li>
+            <ul class="level-2">
+              <li>
+                <p>About</p>
+              </li>
+              <li>
+                <p>Details</p>
+              </li>
+              <li>
+                <p>Service</p>
+              </li>
+              <li>
+                <p>Contact</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <i class="fa fa-phone" style="font-size: 38px; color: red"></i>
+              </li>
+              <li>
+                <i
+                  class="fa fa-facebook-square"
+                  style="font-size: 38px; color: red"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa fa-instagram"
+                  style="font-size: 38px; color: red"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa fa-envelope"
+                  style="font-size: 36px; color: red"
+                ></i>
+              </li>
+            </ul>
+          </li>
+          <!-- <li>
+        <h3>Resources</h3>
+        <ul>
+          <li>Personalised travel advice</li>
+          <li>Where we book our travels</li>
+          <li>Become a booking agent</li>
+        </ul>
+        <p><small>More resources...</small></p>
+      </li> -->
+        </ul>
+      </section>
+    </div>
+
+    <div class="gap" style="width: auto; height: 10px"></div>
+
+    <div  class="sec-01">
+      <div class="container">
+        <h2 class="main-title">Our Packages</h2>
+        <div class="content">
+          <div class="image">
+            <img src="./img/car3.jpg" alt="Car" />
+          </div>
+          <div class="text-box">
+            <h3>Innova</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script>
+      ScrollReveal({
+        // reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal(".main-title", { delay: 500, origin: "left" });
+      ScrollReveal().reveal(".sec-01 .image", { delay: 600, origin: "bottom" });
+      ScrollReveal().reveal(".text-box", { delay: 700, origin: "right" });
+    </script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="./js/nav.js"></script>
+  </body>
+</html>

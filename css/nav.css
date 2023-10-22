@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  --black: #242424;
+  --white: #f5f5f5;
+  --pill: #e0d4be;
+  --red: #cc033f;
+}
+
+ul {
+  list-style: none;
+}
+
+.page-wrap {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/*  NAV: Top Menu Section
+----------------------------------------------- */
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  padding: 1em 5em;
+  display: flex;
+  justify-content: space-between;
+}
+nav img{
+  max-height:50px ;
+}
+/* nav h1 {
+  font-size: clamp(1.2rem, 6vw, 3rem);
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--pill);
+  font-size: 1.3rem;
+  background-color: var(--red);
+  padding: 5px 10px;
+} */
+nav ul {
+  display: flex;
+  color: var(--white);
+}
+nav ul li:not(#burger) {
+  visibility: hidden;
+  margin-right: 1.5em;
+}
+
+#burger {
+  width: min-content;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+#burger span {
+  display: block;
+  height: 5px;
+  width: 29px;
+  background-color: var(--red);
+  border-radius: 200px;
+  transition: transform 0.3s 0.3s ease-in-out;
+}
+
+.active span:nth-of-type(1) {
+  transform:rotate(45deg) ;
+}
+.active span:nth-of-type(2) {
+  transform: translateX(-4px) scaleX(-1);
+}
+.active span:nth-of-type(3) {
+  /* display: none; */
+  transform:rotate(-45deg);
+}

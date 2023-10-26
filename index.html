@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Arul Jothi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap"
@@ -11,11 +13,33 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <script
+      src="https://kit.fontawesome.com/04ae2d9897.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/slider.css" />
     <link rel="stylesheet" href="./css/nav_section.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/car_detail.css" />
+    <link rel="stylesheet" href="./css/review.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/backtotop.css" />
 
     <script
       src="https://code.jquery.com/jquery-2.2.0.min.js"
@@ -27,9 +51,8 @@
   <body>
     <div class="page-wrap">
       <header class="page-header">
-        <nav>
-          <img src="./img/AJ_logo1.png" alt="no" srcset="" />
-          <!-- <h1>CPC | Travel</h1> -->
+        <nav id="navbar">
+          <img src="./img/AJ_logo.webp" alt="no" srcset="" />
           <ul>
             <li id="burger">
               <span></span>
@@ -95,17 +118,20 @@
                 <p>About</p>
               </li>
               <li>
-                <p>Details</p>
+                <p>Our Packages</p>
               </li>
               <li>
-                <p>Service</p>
+                <p>Why Choose Us</p>
               </li>
               <li>
-                <p>Contact</p>
+                <p>Reviews</p>
+              </li>
+              <li>
+                <p>Contact Us</p>
               </li>
             </ul>
           </li>
-          <li>
+          <!-- <li>
             <h3>Contact</h3>
             <ul>
               <li>
@@ -130,23 +156,14 @@
                 ></i>
               </li>
             </ul>
-          </li>
-          <!-- <li>
-        <h3>Resources</h3>
-        <ul>
-          <li>Personalised travel advice</li>
-          <li>Where we book our travels</li>
-          <li>Become a booking agent</li>
-        </ul>
-        <p><small>More resources...</small></p>
-      </li> -->
+          </li> -->
         </ul>
       </section>
     </div>
 
     <div class="gap" style="width: auto; height: 10px"></div>
 
-    <div  class="sec-01">
+    <!-- <div class="sec-01">
       <div class="container">
         <h2 class="main-title">Our Packages</h2>
         <div class="content">
@@ -167,7 +184,299 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+    <div class="review_section">
+      <h2 class="main-title review_title">Hear It from Our Customers</h2>
+
+      <div class="reviews">
+        <div class="rating_layout active">
+          <div class="quote_layout">
+            <div class="quote_holder">
+              <img src="./img/quote.webp" class="quote" />
+            </div>
+          </div>
+          <div class="rating_card">
+            <div class="hor_line"></div>
+
+            <div class="rating_content">
+              <div class="rating_stars">
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+              </div>
+
+              <div class="review_content">
+                <span class="first_letter">I</span> had a wonderful experience
+                with Arul Jothi Tours and Travels. Their communication and
+                customer relationship were exceptional, making me feel valued
+                and comfortable throughout the journey. The guides provided were
+                knowledgeable and friendly, ensuring an enriching travel
+                experience. Punctuality was maintained impeccably, allowing for
+                a seamless itinerary. I genuinely enjoyed my travel with them
+                and am incredibly grateful for their outstanding service. Thank
+                you!
+              </div>
+              <div class="review_name">Sebastian S</div>
+              <div class="review_loc">Karaikudi, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="rating_layout">
+          <div class="quote_layout">
+            <div class="quote_holder">
+              <img src="./img/quote.webp" class="quote" />
+            </div>
+          </div>
+          <div class="rating_card">
+            <div class="hor_line"></div>
+
+            <div class="rating_content">
+              <div class="rating_stars">
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+              </div>
+
+              <div class="review_content">
+                <span class="first_letter">I</span> had a fantastic experience
+                with Arul Jothi Tours and Travels. Their exceptional customer
+                relationship and punctuality made my journey stress-free. The
+                vehicles were impeccably clean and tidy, providing a comfortable
+                travel environment. The team supported us with everything we
+                needed, ensuring a smooth and enjoyable trip. Traveling with
+                them was a pleasure, and I'm incredibly grateful for their
+                excellent service. Thank you!
+              </div>
+              <div class="review_name">Belcy</div>
+              <div class="review_loc">Trichy, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="rating_layout">
+          <div class="quote_layout">
+            <div class="quote_holder">
+              <img src="./img/quote.webp" class="quote" />
+            </div>
+          </div>
+          <div class="rating_card">
+            <div class="hor_line"></div>
+
+            <div class="rating_content">
+              <div class="rating_stars">
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+              </div>
+
+              <div class="review_content">
+                <span class="first_letter">A</span>n excellent drive with ARUL
+                JOTHI travels. Neat and Tidy car, the perfect upkeep of the
+                vehicle made our journey comfortable. Reliable driver, gentle in
+                his approach, very accommodative and friendly with the
+                customers. I highly recommend this travels.
+              </div>
+              <div class="review_name">Sr.Jeyanthy Roselin</div>
+              <div class="review_loc">Srilanka</div>
+            </div>
+          </div>
+        </div>
+        <div class="rating_layout">
+          <div class="quote_layout">
+            <div class="quote_holder">
+              <img src="./img/quote.webp" class="quote" />
+            </div>
+          </div>
+          <div class="rating_card">
+            <div class="hor_line"></div>
+
+            <div class="rating_content">
+              <div class="rating_stars">
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+              </div>
+
+              <div class="review_content">
+                <span class="first_letter">T</span>he customer service provided
+                was excellent, receiving a strong thumbs-up. The staff's
+                exceptional assistance and professionalism stood out, creating a
+                positive and memorable experience. Their dedication to customer
+                satisfaction was evident, making it a top-notch service worth
+                praising.
+              </div>
+              <div class="review_name">Irfan Mohamed</div>
+              <div class="review_loc">Nagercoil, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="rating_layout">
+          <div class="quote_layout">
+            <div class="quote_holder">
+              <img src="./img/quote.webp" class="quote" />
+            </div>
+          </div>
+          <div class="rating_card">
+            <div class="hor_line"></div>
+
+            <div class="rating_content">
+              <div class="rating_stars">
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+                <i class="star fa-solid fa-star fa-beat"></i>
+              </div>
+
+              <div class="review_content">
+                <span class="first_letter">I</span> highly recommend this
+                service; it's truly one of the best in its class. The experience
+                was incredibly friendly and polite, making it exceptionally
+                enjoyable. The outstanding level of service provided here makes
+                it worth recommending to others.
+              </div>
+              <div class="review_name">Saravanan Pillai</div>
+              <div class="review_loc">Nagercoil, India</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dots">
+          <div class="dot activ"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
     </div>
+
+    <div class="contact_section">
+      <div class="contact_layout">
+        <h2 class="main-title review_title contact_title">Contact Us</h2>
+        <p class="contact_para">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci ac
+          auctor augue mauris augue neque gravida. Netus et malesuada fames ac
+          turpis.
+        </p>
+
+        <div class="contact_link_layout">
+          <div class="contact_holder" id="contact1">
+            <div class="contact_img_holder">
+              <img src="./img/whatsapp.webp" class="contact_img" />
+            </div>
+            <div class="contact_link_div">
+              <a
+                href="https://wa.me/6385772517"
+                target="_blank"
+                class="contact_link"
+              >
+                <div class="contact_text_head">Whatsapp</div>
+                <p class="contact_text">6385772517</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact_holder" id="contact2">
+            <div class="contact_img_holder">
+              <img src="./img/tele.webp" class="contact_img" />
+            </div>
+            <div class="contact_link_div">
+              <a href="tel:6385772517" class="contact_link">
+                <div class="contact_text_head">Phone</div>
+                <p class="contact_text">6385772517</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact_holder" id="contact3">
+            <div class="contact_img_holder">
+              <img src="./img/email.webp" class="contact_img" />
+            </div>
+            <div class="contact_link_div">
+              <a
+                href="mailto:edwinsibiraj6363@gmail.com"
+                target="_blank"
+                class="contact_link"
+              >
+                <div class="contact_text_head">Email</div>
+                <p class="contact_text">edwinsibiraj6363@gmail.com</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flower_grid_holder">
+        <div class="grid_holder">
+          <div class="img_holder">
+            <img class="grid_img img1" src="./img/flower4.webp" />
+          </div>
+          <div class="img_holder">
+            <img class="grid_img img2" src="./img/flower2.webp" />
+          </div>
+          <div class="img_holder">
+            <img class="grid_img img3" src="./img/flower1.webp" />
+          </div>
+          <div class="img_holder">
+            <img class="grid_img img4" src="./img/flower3.webp" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer_top_sec">
+        <div class="foot_logo_n_soc">
+          <div class="foot_logo_holder">
+            <img class="foot_logo_img" src="./img/AJ_logo.webp" />
+          </div>
+          <div class="foot_soc_holder">
+            <a
+              href="https://www.google.com/maps/place/ARULJOTHI+TOURS+%26+TRAVELS/@8.1887412,77.398302,17z/data=!3m1!4b1!4m6!3m5!1s0x3b04f1c8eb032677:0xa4aef02e730b8d6a!8m2!3d8.1887412!4d77.4008769!16s%2Fg%2F11k3h0jn42?entry=ttu"
+              target="_blank"
+              class="foot_soc_link fa-solid fa-location-dot"
+            ></a>
+            <a
+              href="tel:6385772517"
+              class="foot_soc_link fa-solid fa-square-phone"
+            ></a>
+            <a
+              href="mailto:edwinsibiraj6363@gmail.com"
+              target="_blank"
+              class="foot_soc_link fa-solid fa-envelope"
+            ></a>
+            <a
+              href="https://www.facebook.com/people/ARUL-JOTHI-Tours-Travels/100066684542440/"
+              target="_blank"
+              class="foot_soc_link fa-brands fa-square-facebook"
+            ></a>
+          </div>
+        </div>
+
+        <div class="foot_addr">
+          N.M.manapillai complex, peruvillai road,<br />parvathipuram,
+          Nagercoil.<br />Landmark: jeo hospital
+        </div>
+      </div>
+
+      <div class="foot_dev_team">
+        For development services mail here:
+        <a href="mailto:arockiyabelcyvs@gmail.com" class="dev_mail"
+          >arockiyabelcyvs@gmail.com</a
+        >
+      </div>
+    </div>
+    <div class="back fa fa-chevron-up" id="backtotop" ></div>
 
     <script>
       ScrollReveal({
@@ -180,8 +489,18 @@
       ScrollReveal().reveal(".main-title", { delay: 500, origin: "left" });
       ScrollReveal().reveal(".sec-01 .image", { delay: 600, origin: "bottom" });
       ScrollReveal().reveal(".text-box", { delay: 700, origin: "right" });
+      ScrollReveal().reveal(".reviews", { delay: 800, origin: "right" });
+      ScrollReveal().reveal(".contact_title", { delay: 100, origin: "left" });
+      ScrollReveal().reveal(".contact_para", { delay: 100, origin: "left" });
+      ScrollReveal().reveal("#contact1", { delay: 300, origin: "bottom" });
+      ScrollReveal().reveal("#contact2", { delay: 400, origin: "bottom" });
+      ScrollReveal().reveal("#contact3", { delay: 500, origin: "bottom" });
+
+      ScrollReveal().reveal(".flower_grid_holder", { delay: 300, origin: "bottom" });
     </script>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="./js/review.js"></script>
+    <script src="./js/backtotop.js"></script>
   </body>
 </html>

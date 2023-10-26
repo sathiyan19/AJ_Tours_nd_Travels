@@ -13,6 +13,23 @@ let tl = gsap.timeline({
 
 overlay.style.display = "none";
 
+const navbar = document.getElementById("navbar");
+
+// Function to toggle the "scrolled" class based on scroll position
+function toggleNavbarColor() {
+  if (window.scrollY > window.innerHeight) { // Adjust the scroll position at which the color changes
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+}
+
+// Add a scroll event listener to call the toggleNavbarColor function
+window.addEventListener("scroll", toggleNavbarColor);
+
+// Call the function once to set the initial state
+toggleNavbarColor();
+
 burger.addEventListener("click", (e) => {
   showMenu = !showMenu;
   if (showMenu) {

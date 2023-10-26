@@ -8,11 +8,11 @@
 
 body {
   font-family: "Poppins", sans-serif;
-
+  /* overflow-x: hidden; */
   --black: #242424;
   --white: #f5f5f5;
   --pill: #e0d4be;
-  --red: #cc033f;
+  --red: #511f52;
 }
 
 ul {
@@ -38,6 +38,7 @@ nav {
   padding: 1em 5em;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 nav img{
   max-height:50px ;
@@ -77,13 +78,24 @@ nav ul li:not(#burger) {
   transition: transform 0.3s 0.3s ease-in-out;
 }
 
+.scrolled{
+  background-color: rgba(169, 135, 168, 0.9);
+  transition: 0.3s ease-out;
+}
+
 .active span:nth-of-type(1) {
-  transform:rotate(45deg) ;
+  transform:rotate(45deg) scaleX(1) translateX(2px) translateY(10px);
 }
 .active span:nth-of-type(2) {
-  transform: translateX(-4px) scaleX(-1);
+  transform: translateX(-4px) scaleX(0);
 }
 .active span:nth-of-type(3) {
   /* display: none; */
-  transform:rotate(-45deg);
+  transform:rotate(-45deg) scaleX(1) translateY(-10px);
+}
+
+@media(max-width:600px){
+  nav img{
+    max-height:35px ;
+  }
 }

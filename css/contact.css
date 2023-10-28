@@ -42,6 +42,7 @@
 .contact_title{
     margin-bottom: 10px !important;
     color: #511f52;
+    text-align: left !important;
 }
 .contact_para{
     color: #a987a8;
@@ -53,6 +54,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .contact_link_layout{
@@ -110,6 +113,11 @@
     text-align: center;
     color: #a987a8;
   }
+  @media(max-width:850px){
+    .contact_title{
+        font-size: 58px ;
+    }
+}
 
   @media(max-width:768px){
     .contact_section{
@@ -162,3 +170,23 @@
         text-align: center;
     }
   }
+  @media(max-width:500px){
+    .contact_title{
+        font-size: 48px;
+    }
+}
+@media(max-width:415px){
+    .contact_title{
+        font-size: 44px;
+    }
+}
+@media(max-width:385px){
+    .contact_title{
+        font-size: 40px;
+    }
+}
+@media(max-width:352px){
+    .contact_title{
+        font-size: 35px;
+    }
+}

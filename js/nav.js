@@ -1,6 +1,7 @@
 let burger = document.getElementById("burger");
 let overlay = document.querySelector("section");
 let heroImage = document.querySelector(".hero-image");
+let nav_button = document.getElementsByClassName("nav_buttons");
 let showMenu = false;
 let del = 3;
 let i = 1;
@@ -10,6 +11,8 @@ let tl = gsap.timeline({
   yoyo: true,
   ease: "expo.out"
 });
+
+
 
 overlay.style.display = "none";
 
@@ -48,6 +51,8 @@ burger.addEventListener("click", (e) => {
     });
   }
 });
+
+
 
 gsap.set(["#hero-1 h2, #hero-1 h1, #hero-1 h3"], {
   clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
@@ -114,4 +119,16 @@ while (i < 5) {
     );
 
   i++;
+}
+
+for(i=0;i<nav_button.length;i++){
+  nav_button[i].addEventListener("click",()=>{
+    showMenu = !showMenu;
+    burger.classList.remove("active");
+    gsap.to(overlay, 1, {
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+      ease: "expo.out",
+      onComplete: () => (overlay.style.display = "none")
+    });
+  })
 }

@@ -21,13 +21,14 @@ section {
     font-size: 1.8rem;
     text-transform: uppercase;
   }
-  .level-1 p {
+  .level-1 a {
     margin: 0.5em 0 0 0.5em;
   }
   
   .level-1 ul > li {
     font-size: 1.2rem;
     padding: 0.3em;
+    margin: 1em 0;
     transition: transform 0.3s ease-in-out;
   }
   /* .level-1 i{
@@ -64,7 +65,8 @@ section {
     padding: 0.3em 1em;
     width: 100%;
   }
-  .level-1 li ul p {
+  .level-1 li ul a {
+    text-decoration: none;
     color: var(--red);
     font-size: 1.3rem;
     font-weight: 600;
@@ -73,9 +75,9 @@ section {
     border-bottom: 2px solid #511f52;
   }
   
-  @media screen and (max-width: 600px) {
+  @media  (max-width: 600px) {
     nav {
-      padding: 1em 2em;
+      padding: 0.5em 0.5em;
     }
     nav h1 {
       font-size: 0.9rem;
@@ -105,6 +107,6 @@ section {
   }
   @media(max-width:375px){
     nav{
-      padding: 1em 1em;
+      padding: 0.5em 0.5em;
     }
   }

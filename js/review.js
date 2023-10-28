@@ -98,8 +98,8 @@ var slider = function (manual, previous) {
   }
   manual = manual % reviews.length;
   prev = previous;
-  console.log("prev:", prev);
-  console.log("manual:", manual);
+  // console.log("prev:", prev);
+  // console.log("manual:", manual);
   reviews[prev].classList.remove("active");
   reviews[prev].classList.add("disappear");
 

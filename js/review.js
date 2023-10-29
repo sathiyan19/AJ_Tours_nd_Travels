@@ -77,7 +77,7 @@ function resumeTimer() {
       prev = n;
       n++;
       slider(n, prev);
-    }, 5000);
+    }, 7000);
   }
 }
 
